@@ -1,0 +1,71 @@
+/*Стили для хедера*/
+body {
+    --bg-color: #030304;
+    --main-font: 'Noto Sans', sans-serif;
+    background-color: var(--bg-color);
+}
+
+body ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.nav-list__item {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    color: #ffffff;
+    font-family: var(--main-font);
+    margin-right: 15px;
+}
+
+.nav-wrap {
+    display: flex;
+}
+
+.main-nav__search__input {
+    background-color: transparent;
+    border: none;
+}
+
+.fa-search {
+    color: white;
+}
+
+.header-search__input {
+    margin-right: 35px;
+}
+
+.profile-search__wrap {
+    display: flex;
+    align-items: center;
+}
+.nav-list {
+    display: flex;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-header {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*Стили для профиля*/
+.profile-container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-container__header {
+    --secondary-color: #12121A;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    width: 100%;
+}
+
