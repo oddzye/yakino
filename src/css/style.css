@@ -5,3 +5,16 @@ a {
     text-decoration: none;
     color: white;
 }
+
+.default-btn {
+    outline: none;
+    border: none;
+}
+
+.default-btn:hover {
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+}

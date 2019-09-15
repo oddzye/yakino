@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/71b1a05927.js"></script>
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/cferdinandi/tabby@12/dist/css/tabby.min.css">
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/tabby@12/dist/js/tabby.polyfills.min.js"></script>
     <title>Я - кино</title>
 </head>
 <body>
@@ -37,13 +40,72 @@
        <div class="profile-container">
            <div class="profile-container__header">
                <div class="profile-header__profile-block">
-                    <img src="./src/img/header/profile-logo__mini.png" alt="Аватар">
-                    <p>Александр</p>
+                   <div class="profile-user__img">
+                        <img src="./src/img/profile/user-avatar.png" alt="Аватар">
+                   </div>
+                    <p class="profile-user__name">Александр</p>
+                    <div class="profile-tabs">
+                            <ul data-tabs class="profile-tabs__list">
+                                <li class="profile-tabs__profile__item"><a data-tabby-default href="#profile">Профиль</a></li>
+                                <li><a href="#subscribe">Подписка</a></li>
+                            </ul>
+                       </div>
                </div>
-               <div class="tabs"></div>
-               <button class="logout_btn">Выйти из профиля</button>
+               <button class="profile-logout__btn">Выйти из профиля</button>
            </div>
+           <div id="profile">
+               <div class="profile-tab">
+                    <div class="general-form form-default">
+                        <div class="profile-form__title">
+                            Общее
+                        </div> 
+                        <form>
+                            <input class="default-input" placeholder="Имя" type="text" name="user-name">
+                            <input class="default-input" placeholder="Фамилия" type="text" name="user-surname">
+                            <input class="default-input" placeholder="Пол" type="text" name="user-gender">
+                            <div class="news-subscribe__block">
+                                <label class="switch-wrap">
+                                    <input type="checkbox" />
+                                    <div class="switch"></div>
+                                </label>
+                                <span>
+                                    Получать новости и специальные <br>
+                                    предложения по e-mail 
+                                </span>
+                            </div>
+                        </form>
+                   </div>
+                   <div class="security-form form-default">
+                        <div class="profile-form__title">
+                                Безопасноть
+                        </div> 
+                        <form action="">
+                                <input class="default-input" placeholder="E-mail" type="email" name="user-email">
+                                <input class="default-input" placeholder="Пароль" type="password" name="user-password">
+                        </form>
+                   </div>
+               </div>
+           </div>
+           <div id="subscribe">
+                <div class="subscribe-tab">
+                    <div class="subscribe-tab-status form-default">
+                        <h3 class="subscribe-tab-status__title">Подписка неактивна</h3>
+                        <p class="subscribe-tab-status__text">Подключите подписку и получите доступ ко всему контенту сервиса</p>
+                        <button class="subscribe-tab-status__btn default-btn">Подключить</button>
+                    </div>
+                    <div class="subscribe-card form-default">
+                        <div class="subscribe-card__img">
+                            <img src="./src/img/profile/credit-card-icon.png" alt="Кредитная карта" class="subscribe-card__icon">
+                        </div>
+                        <p class="subscribe-card__text">Вы пока не прикрепили платёжные карты</p>
+                    </div>
+                </div>
+            </div>
        </div>
    </section>
+
+   <script>
+        var tabs = new Tabby('[data-tabs]');
+    </script>
 </body>
 </html>
