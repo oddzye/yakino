@@ -1,0 +1,4 @@
+section .film-details {
+    padding: 143px 208px 150px 255px;
+    background: linear-gradient(0deg, rgba(3, 3, 4, 0.5), rgba(3, 3, 4, 0.5)), url(../img/film-details/film-details-bg.jpg);
+}
