@@ -6,12 +6,15 @@ body {
     background-color: var(--bg-color);
     font-family: var(--main-font);
     color: #ffffff;
-    box-sizing: border-box;
 }
 
 body ul {
     list-style-type: none;
     margin: 0;
+}
+
+.logo-wrap {
+    margin-right: 43px;
 }
 
 .nav-list__item {
@@ -66,7 +69,7 @@ header.main-header {
 .profile-container__header {
     background-color: var(--secondary-color);
     border-radius: 10px;
-    width: 934px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -134,8 +137,8 @@ section.profile {
 .switch-wrap {
     cursor: pointer;
     background: #1C1C26;
-    width: 32px;
-    height: 16px;
+    width: 42px;
+    height: 20px;
     border-radius: 30px;
     padding-left: 5px;
     padding-right: 5px;
@@ -164,7 +167,6 @@ section.profile {
     border-radius: 50%;
     background: #676372;
     grid-column: 2;
-    margin-top: -2px;
     transition: background .2s;
   }
   input:checked + .switch {
@@ -193,6 +195,7 @@ section.profile {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 159px;
 }
 
 .form-default {
@@ -202,7 +205,7 @@ section.profile {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 408px;
+    width: 480px;
 }
 
 .default-input {
@@ -241,12 +244,12 @@ section.profile {
     justify-content: space-between;
     align-items: flex-start;
     text-align: center;
+    margin-bottom: 225px;
 }
 
 .subscribe-tab-status {
     align-items: center;
-    padding-top: 50px;
-    padding-bottom: 60px;
+    padding: 58px 89px 66px 89px;
 }
 
 .subscribe-tab-status__title {
@@ -274,8 +277,7 @@ section.profile {
 .subscribe-card {
     align-items: center;
     justify-content: center;
-    padding-top: 64px;
-    padding-bottom: 60px;
+    padding: 64px 97px 60px 81px;
 }
 
 .subscribe-card__img {
@@ -290,4 +292,36 @@ section.profile {
     max-width: 302px;
 }
 
+footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 70px;
+}
 
+footer {
+    width: 1083px;
+    margin: 0 auto;
+    padding-bottom: 52px;
+}
+.footer-main__img {
+    margin-bottom: 17px;
+}
+
+footer .footer-title {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 23px;
+}
+
+footer .footer-list .footer-list__item a,
+footer .footer-list__item a,
+footer span.footer-list__item {
+    color: #8A8598;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+footer .footer-list .footer-list__item:nth-child(1) {
+    margin-bottom: 10px;
+}

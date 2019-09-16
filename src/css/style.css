@@ -1,5 +1,9 @@
 @import './profile.css';
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
 a {
     outline: none;
     text-decoration: none;
@@ -15,6 +19,6 @@ a {
     cursor: pointer;
 }
 
-p {
-    margin: 0;
+ul {
+    padding: 0;
 }
