@@ -45,9 +45,8 @@ header.main-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px 20px;
+
 }
 
 /*Стили для профиля*/

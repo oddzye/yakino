@@ -1,13 +1,14 @@
-section.film-details {
-    background:linear-gradient(0deg, rgba(3, 3, 4, 1.5), rgba(3, 3, 4, 0.5)), url(../img/film-details/film-details-bg.jpg) center center no-repeat;
+.film-details {
+    background:  linear-gradient(0deg, rgba(7, 7, 10, 1.47), rgba(7, 7, 10, 0.47)), url(../img/film-details/film-details-bg.jpg) center center no-repeat;
     background-size: cover;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-section .film-details__watch__preview .play-btn .play-btn__triangle {
+.film-details__watch__preview .play-btn .play-btn__triangle {
     margin-left: 3px;
 }
 
-section.film-details .film-details__watch__preview {
+.film-details .film-details__watch__preview {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,6 +129,13 @@ p.film-details__description__text span {
     margin: 0 auto;
     max-width: 1178px;
     text-align: center;
+    background: linear-gradient(0deg, rgba(18, 18, 26, 0.93), rgba(18, 18, 26, 0.93)), url(../img/film-details/film-details-watch-bg.jpg) center center no-repeat;
+    background-position: cover;
+    padding: 79px 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 130px;
 }
 
 .film-details__watch__advantages__block {
@@ -137,5 +145,68 @@ p.film-details__description__text span {
 
 .film-details__watch__advantages__numbers {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 36px;
+}
+
+.film-details__watch__subscribe__title {
+    font-weight: 900;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.film-details__watch__subscribe__text {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 38px;
+}
+
+.advantages-numbers__item .item-number {
+    font-weight: bold;
+    font-size: 23px;
+    color: var(--yellow-color);
+    margin-bottom: 7px;
+}
+
+.advantages-numbers__item .item-text {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.film-details__watch__advantages__text {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 50px;
+}
+
+.item-text__img {
+    margin-bottom: 13px;
+}
+
+.advantages-text__item {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.film-details__watch__advantages__company {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.try-free__btn {
+    background: #7000FF;
+    box-shadow: 0px 0px 45px rgba(112, 0, 255, 0.5);
+    border-radius: 7px;
+    font-weight: 800;
+    font-size: 16px;
+    color: white;
+    max-width: 270px;
+    margin: 0 auto;
+    padding: 14px 28px 19px 29px;
 }

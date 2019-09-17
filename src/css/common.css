@@ -14,6 +14,7 @@ body {
     --secondary-color: #12121A;
     --main-font: 'Noto Sans', sans-serif;
     --gray-color: #676372;
+    --yellow-color: #FFF500;;
     background-color: var(--bg-color);
     font-family: var(--main-font);
     color: #ffffff;
