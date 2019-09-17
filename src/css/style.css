@@ -1,3 +1,4 @@
+@import './common.css';
 @import './profile.css';
 @import './film-details.css';
 
@@ -5,10 +6,19 @@
     box-sizing: border-box;
     margin: 0;
 }
+
 a {
     outline: none;
     text-decoration: none;
     color: white;
+}
+
+button {
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .default-btn {

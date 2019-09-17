@@ -1,4 +1,81 @@
-section .film-details {
-    padding: 143px 208px 150px 255px;
-    background: linear-gradient(0deg, rgba(3, 3, 4, 0.5), rgba(3, 3, 4, 0.5)), url(../img/film-details/film-details-bg.jpg);
+section.film-details {
+    background:linear-gradient(0deg, rgba(3, 3, 4, 1.5), rgba(3, 3, 4, 0.5)), url(../img/film-details/film-details-bg.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+section .film-details__watch__preview .play-btn .play-btn__triangle {
+    margin-left: 3px;
+}
+
+section.film-details .film-details__watch__preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 143px;
+    padding-bottom: 110px;
+}
+
+.film-details__play-btn {
+    margin-right: 14px;
+}
+
+.film-details__text {
+    color: var(--gray-color);
+}
+
+.film-details__description {
+    max-width: 1178px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.film-details__description__img {
+    margin-right: 36px;
+    max-width: 194px;
+}
+
+.film-details__description__info-title {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.film-details__description__info-subtitle {
+    color: var(--gray-color);
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.film-details__description__stats .stats-age {
+    border: 1px solid #FFF500;
+    border-radius: 7px;
+    max-width: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFF500;
+    padding: 6px 8px;
+    margin-right: 20px;
+}
+
+.film-details__description__stats {
+    display: flex;
+}
+
+.stats-time__img {
+    margin-right: 9px;
+}
+
+.stats-time {
+    display: flex;
+    align-items: center;
+}
+
+.stat-time__text {
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
 }

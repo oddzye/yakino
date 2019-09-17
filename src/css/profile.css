@@ -1,12 +1,3 @@
-/*Стили для хедера*/
-body {
-    --bg-color: #030304;
-    --secondary-color: #12121A;
-    --main-font: 'Noto Sans', sans-serif;
-    background-color: var(--bg-color);
-    font-family: var(--main-font);
-    color: #ffffff;
-}
 
 body ul {
     list-style-type: none;
