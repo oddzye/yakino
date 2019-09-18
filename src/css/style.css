@@ -1,6 +1,6 @@
-@import './common.css';
+@import './common/common.css';
 @import './profile.css';
-@import './film-details.css';
+@import './film-details/film-details.css';
 
 * {
     box-sizing: border-box;

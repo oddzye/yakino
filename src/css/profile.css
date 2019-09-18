@@ -4,50 +4,6 @@ body ul {
     margin: 0;
 }
 
-.logo-wrap {
-    margin-right: 43px;
-}
-
-.nav-list__item {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 13px;
-    color: #ffffff;
-    margin-right: 25px;
-}
-
-.nav-wrap {
-    display: flex;
-}
-
-.main-nav__search__input {
-    background-color: transparent;
-    border: none;
-}
-
-.fa-search {
-    color: white;
-}
-
-.header-search__input {
-    margin-right: 35px;
-}
-
-.profile-search__wrap {
-    display: flex;
-    align-items: center;
-}
-.nav-list {
-    display: flex;
-}
-
-header.main-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 20px;
-
-}
 
 /*Стили для профиля*/
 .profile-container {
