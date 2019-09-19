@@ -11,6 +11,10 @@ body {
     color: #ffffff;
 }
 
+select:focus {
+    outline: none;
+}
+
 .play-btn {
     width: 46px;
     height: 46px;
@@ -100,6 +104,13 @@ header.main-header {
 
 .burger-menu span.third-line {
     width: 20px;
+}
+
+.default-container {
+    max-width: 1314px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 @media only screen and (min-width : 0px) and (max-width : 768px) {
