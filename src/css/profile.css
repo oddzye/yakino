@@ -270,11 +270,11 @@ footer span.footer-list__item {
     font-size: 14px;
 }
 
-span.footer-list__item {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
 footer .footer-list .footer-list__item:nth-child(1) {
     margin-bottom: 10px;
+}
+
+.footer-rights {
+    padding-left: 20px;
+    padding-right: 20px;
 }

@@ -2,6 +2,7 @@
 @import './profile.css';
 @import './film-details/film-details.css';
 @import './films/films.css';
+@import './onlinetv/onlinetv.css';
 
 * {
     box-sizing: border-box;
