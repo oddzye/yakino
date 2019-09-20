@@ -113,6 +113,13 @@ header.main-header {
     padding-right: 15px;
 }
 
+.md-container {
+    max-width: 1178px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .default-title {
     font-size: 26px;
     color: #FFFFFF;
