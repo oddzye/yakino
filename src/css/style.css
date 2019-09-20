@@ -4,6 +4,7 @@
 @import './films/films.css';
 @import './onlinetv/onlinetv.css';
 @import './onlinetv-details/onlinetv-details.css';
+@import './videos/videos.css';
 
 * {
     box-sizing: border-box;

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/71b1a05927.js"></script>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/cferdinandi/tabby@12/dist/css/tabby.min.css">
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/tabby@12/dist/js/tabby.polyfills.min.js"></script>
+    <title>Я - кино</title>
+</head>
+<body>
+   <header class="main-header">
+       <div class="nav-wrap">
+            <div class="burger-menu">
+                <span class="first-line"></span>
+                <span class="second-line"></span>
+                <span class="third-line"></span>
+            </div>
+            <div class="logo-wrap">
+                    <img src="./src/img/header/logo.png" alt="Я-кино">
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="#">Фильмы</a></li>
+                    <li class="nav-list__item"><a href="#">Сериалы</a></li>
+                    <li class="nav-list__item"><a href="#">Мультфильмы</a></li>
+                    <li class="nav-list__item"><a href="#">Онлайн ТВ</a></li>
+                    <li class="nav-list__item"><a href="#">Видеоролики</a></li>
+                </ul>
+            </nav>
+       </div>
+       <div class="header-search__wrap">
+           <div class="header-search__input">
+                <input class="main-nav__search__input" placeholder="Поиск..." type="text">
+                <i class="fas fa-search"></i>
+           </div>
+            <img src="./src/img/header/profile-logo__mini.png" alt="Аватар">
+       </div>
+   </header>
+   <main>
+        <div class="default-container">
+            <div class="filter-panel filter-panel__videos">
+                <div class="filter-panel__selects">
+                    <div class="filter-panel__select-item">
+                        <select name="year" id="select-video-type">
+                            <option>Все блогеры</option>
+                            <option>Пранки</option>
+                            <option>Бьюти-блогеры</option>
+                        </select>
+                    </div>
+                    <div class="filter-panel__select-item">
+                        <select name="popular" id="select-video-popular">
+                            <option>Сортировать по...</option>
+                            <option>Все</option>
+                            <option>По популярности</option>
+                            <option>Новые</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="clear-filter__btn">
+                    <span>Сбросить фильтры</span>
+                </button>
+            </div>
+            <div class="videos-container">
+                <div class="videos-item">
+                    <a href="#">
+                        <img src="./src/img/videos/video-preview-1.png" alt="" class="videos-item__img">
+                        <h5 class="videos-item__title">Детина 220кг вырубил Сатаниста...</h5>
+                        <span class="videos-item__category">Развлечение</span>
+                    </a>
+                </div>
+                <div class="videos-item">
+                    <a href="#">
+                        <img src="./src/img/videos/video-preview-2.png" alt="" class="videos-item__img">
+                        <h5 class="videos-item__title">EDWARD BIL ПРОДАЛ ГЕЛИК РАДИ Д...</h5>
+                        <span class="videos-item__category">Развлечение</span>
+                    </a>
+                </div>
+                <div class="videos-item">
+                    <a href="#">
+                        <img src="./src/img/videos/video-preview-3.png" alt="" class="videos-item__img">
+                        <h5 class="videos-item__title">[BadComedian] - НА РАЙОНЕ (Козло...</h5>
+                        <span class="videos-item__category">Кино</span>
+                    </a>
+                </div>
+                <div class="videos-item">
+                    <a href="#">
+                        <img src="./src/img/videos/video-preview-4.png" alt="" class="videos-item__img">
+                        <h5 class="videos-item__title">EDWARD BIL / ЧУТЬ НЕ ЗАДУШИЛИ...</h5>
+                        <span class="videos-item__category">Развлечение</span>
+                    </a>
+                </div>
+                <div class="videos-item">
+                    <a href="#">
+                        <img src="./src/img/videos/video-preview-1.png" alt="" class="videos-item__img">
+                        <h5 class="videos-item__title">Детина 220кг вырубил Сатаниста...</h5>
+                        <span class="videos-item__category">Развлечение</span>
+                    </a>
+                </div>
+                <div class="videos-item">
+                    <a href="#">
+                        <img src="./src/img/videos/video-preview-2.png" alt="" class="videos-item__img">
+                        <h5 class="videos-item__title">EDWARD BIL ПРОДАЛ ГЕЛИК РАДИ Д...</h5>
+                        <span class="videos-item__category">Развлечение</span>
+                    </a>
+                </div>
+                <div class="videos-item">
+                    <a href="#">
+                        <img src="./src/img/videos/video-preview-3.png" alt="" class="videos-item__img">
+                        <h5 class="videos-item__title">[BadComedian] - НА РАЙОНЕ (Козло...</h5>
+                        <span class="videos-item__category">Кино</span>
+                    </a>
+                </div>
+                <div class="videos-item">
+                    <a href="#">
+                        <img src="./src/img/videos/video-preview-4.png" alt="" class="videos-item__img">
+                        <h5 class="videos-item__title">EDWARD BIL / ЧУТЬ НЕ ЗАДУШИЛИ...</h5>
+                        <span class="videos-item__category">Развлечение</span>
+                    </a>
+                </div>
+                <div class="videos-item">
+                    <a href="#">
+                        <img src="./src/img/videos/video-preview-1.png" alt="" class="videos-item__img">
+                        <h5 class="videos-item__title">Детина 220кг вырубил Сатаниста...</h5>
+                        <span class="videos-item__category">Развлечение</span>
+                    </a>
+                </div>
+                <div class="videos-item">
+                    <a href="#">
+                        <img src="./src/img/videos/video-preview-2.png" alt="" class="videos-item__img">
+                        <h5 class="videos-item__title">EDWARD BIL ПРОДАЛ ГЕЛИК РАДИ Д...</h5>
+                        <span class="videos-item__category">Развлечение</span>
+                    </a>
+                </div>
+                <div class="videos-item">
+                    <a href="#">
+                        <img src="./src/img/videos/video-preview-3.png" alt="" class="videos-item__img">
+                        <h5 class="videos-item__title">[BadComedian] - НА РАЙОНЕ (Козло...</h5>
+                        <span class="videos-item__category">Кино</span>
+                    </a>
+                </div>
+                <div class="videos-item">
+                    <a href="#">
+                        <img src="./src/img/videos/video-preview-4.png" alt="" class="videos-item__img">
+                        <h5 class="videos-item__title">EDWARD BIL / ЧУТЬ НЕ ЗАДУШИЛИ...</h5>
+                        <span class="videos-item__category">Развлечение</span>
+                    </a>
+                </div>
+            </div>
+            <div class="subscribe-off default-container">
+                <a href="#">Отключить подписку</a>
+            </div>
+        </div>    
+   </main>
+   <footer>
+        <div class="footer-container">
+             <div class="footer-main">
+                 <div class="footer-main__img">
+                         <img src="./src/img/header/logo.png" alt="Я-кино">
+                 </div>
+                 <span class="footer-list__item"><a href="#">support@name.ru</a></span>
+             </div>
+             <div class="footer-service">
+                     <h5 class="footer-service__title footer-title">О сервисе</h5>
+                     <ul class="footer-list">
+                         <li class="footer-list__item"><a href="#">Немного о нас</a></li>
+                         <li class="footer-list__item"><a href="#">Партнёрская программа</a></li>
+                     </ul>
+                 </div>
+                 <div class="footer-support">
+                     <h5 class="footer-support__title footer-title">Помощь</h5>
+                     <ul class="footer-list">
+                         <li class="footer-list__item"><a href="#">Поддержка</a></li>
+                         <li class="footer-list__item"><a href="#">Вопросы и ответы</a></li>
+                     </ul>
+                 </div>
+                 <div class="footer-agreement">
+                     <h5 class="footer-agreement__title footer-title">Соглашения</h5>
+                     <ul class="footer-list">
+                         <li class="footer-list__item"><a href="#">Пользовательское соглашение</a></li>
+                         <li class="footer-list__item"><a href="#">Политика конфиденциальности</a></li>
+                     </ul>
+             </div>
+        </div>
+        <span class="footer-list__item footer-rights">© 2019, Name. Все права защищены</span>
+    </footer>
+</body>
+</html>
