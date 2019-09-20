@@ -1,0 +1,81 @@
+.onlinetv-details__container {
+    display: flex;
+    margin-bottom: 66px;
+}
+
+.onlinetv-video__wrap video {
+    width: 100%;
+}
+
+.onlinetv-video__wrap {
+    width: 80%;
+}
+
+.onlinetv-details__container aside{
+    width: 370px;
+    background-color: #12121A;
+    padding: 30px 15px 30px 30px;
+}
+
+.tv-channel__title-category {
+    font-weight: 600;
+    font-size: 15px;
+    color: #676372;
+    margin-left: 20px;
+    margin-bottom: 17px;
+}
+
+.tv-channel__item-img {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #202029;
+    border-radius: 10px;
+    margin-right: 14px;
+}
+
+.tv-channel__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.tv-channel__item-img img{
+    width: 80%;
+}
+
+.tv-channel__item__text-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.tv-channel__item__text-coming {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    color: #676372;
+}
+
+.tv-channel__list {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width : 0px) and (max-width : 968px) {
+    .onlinetv-details__container {
+        flex-direction: column;
+    }
+
+    .onlinetv-video__wrap {
+        width: 100%;
+    }
+    
+    .onlinetv-details__container aside{
+        width: 100%;
+    }
+}
+
+
