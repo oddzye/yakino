@@ -13,37 +13,52 @@
     <title>Я - кино</title>
 </head>
 <body>
-   <header class="main-header">
-       <div class="nav-wrap">
-            <div class="logo-wrap">
-                    <img src="./src/img/header/logo.png" alt="Я-кино">
-               </div>
-               <nav>
-                   <ul class="nav-list">
-                       <li class="nav-list__item"><a href="#">Фильмы</a></li>
-                       <li class="nav-list__item"><a href="#">Сериалы</a></li>
-                       <li class="nav-list__item"><a href="#">Мультфильмы</a></li>
-                       <li class="nav-list__item"><a href="#">Онлайн ТВ</a></li>
-                       <li class="nav-list__item"><a href="#">Видеоролики</a></li>
-                   </ul>
-               </nav>
-       </div>
-       <div class="profile-search__wrap">
-           <div class="header-search__input">
-                <input class="main-nav__search__input" placeholder="Поиск..." type="text">
-                <i class="fas fa-search"></i>
-           </div>
-            <img src="./src/img/header/profile-logo__mini.png" alt="Аватар">
-       </div>
-   </header> 
+        <header class="main-header">
+            <div class="nav-wrap">
+                <div class="burger-menu">
+                        <input type="checkbox" id="overlay-input" />
+                        <label for="overlay-input" id="overlay-button"><span></span></label>
+                        <div id="overlay">
+                            <ul>
+                            <li><a href="#"><img class="mobile-nav__icon" src="./src/img/nav/movie-icon.png">Фильмы</a></li>
+                            <li><a href="#"><img class="mobile-nav__icon" src="./src/img/nav/serials-icon.png">Сериалы</a></li>
+                            <li><a href="#"><img class="mobile-nav__icon" src="./src/img/nav/cartoons-icon.png">Мультфильмы</a></li>
+                            <li><a href="#"><img class="mobile-nav__icon" src="./src/img/nav/tv-icon.png">Онлайн ТВ</a></li>
+                            <li><a href="#"><img class="mobile-nav__icon" src="./src/img/nav/video-icon.png">Видеоролики</a></li>
+                            </ul>
+                        </div>
+                </div>
+                    <div class="logo-wrap">
+                            <img src="./src/img/header/logo.png" alt="Я-кино">
+                    </div>
+                    <nav>
+                        <ul class="nav-list">
+                            <li class="nav-list__item"><a href="#">Фильмы</a></li>
+                            <li class="nav-list__item"><a href="#">Сериалы</a></li>
+                            <li class="nav-list__item"><a href="#">Мультфильмы</a></li>
+                            <li class="nav-list__item"><a href="#">Онлайн ТВ</a></li>
+                            <li class="nav-list__item"><a href="#">Видеоролики</a></li>
+                        </ul>
+                    </nav>
+            </div>
+            <div class="header-search__wrap">
+                <div class="header-search__input">
+                        <input class="main-nav__search__input" placeholder="Поиск..." type="text">
+                        <i class="fas fa-search"></i>
+                </div>
+                    <img src="./src/img/header/profile-logo__mini.png" alt="Аватар">
+            </div>
+        </header>
    <section class="profile">
        <div class="profile-container">
            <div class="profile-container__header">
                <div class="profile-header__profile-block">
-                   <div class="profile-user__img">
-                        <img src="./src/img/profile/user-avatar.png" alt="Аватар">
+                   <div class="profile-user__wrap">
+                        <div class="profile-user__img">
+                            <img src="./src/img/profile/user-avatar.png" alt="Аватар">
+                        </div>
+                        <p class="profile-user__name">Александр</p>
                    </div>
-                    <p class="profile-user__name">Александр</p>
                     <div class="profile-tabs">
                             <ul data-tabs class="profile-tabs__list">
                                 <li class="profile-tabs__profile__item"><a data-tabby-default href="#profile">Профиль</a></li>
