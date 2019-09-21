@@ -277,4 +277,5 @@ footer .footer-list .footer-list__item:nth-child(1) {
 .footer-rights {
     padding-left: 20px;
     padding-right: 20px;
+    display: inline-block;
 }
