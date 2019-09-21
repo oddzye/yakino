@@ -2,24 +2,27 @@
     max-width: 100%;
     background: #121219;
     border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 30px;
+    margin-bottom: 30px;
+    margin-top: 40px;
 }
 
 .filter-panel__selects {
     display: flex;
+    align-items: center;
 }
 
 .filter-panel__select-item {
-    min-width: 160px;
+    min-width: 140px;
     margin-right: 25px;
 }
 
-.filter-panel {
-    display: flex;
-    justify-content: space-between;
-    padding: 16px 30px;
-    margin-bottom: 30px;
-    margin-top: 40px;
+.filter-panel__select-item #select-country, .filter-panel__select-item #select-popular {
+    min-width: 200px;
 }
+
 
 .filter-panel__select-item select:nth-child(1) {
     color: #676372;
@@ -42,22 +45,21 @@
     padding: 12px 20px 12px 19px;
 }
 
-button.clear-filter__btn::before {
-    content: url('../../img/common/reload.png');
-    display: block;
-    position: absolute;
-    left: -45px;
-    top: -7px;
-    width: 18px;
-    height: 20px;
+button.clear-filter__btn .clear-filter__icon img{
+    width: 100%;
 }
 
 .clear-filter__btn {
-    position: relative;
+    display: flex;
+    align-items: center;
     font-weight: 600;
     font-size: 15px;
     color: white;
     background-color: transparent;
+}
+
+.clear-filter__btn span {
+    display: inline-block;
 }
 
 .films-queue__item {
@@ -110,10 +112,7 @@ button.clear-filter__btn::before {
     }
 }
 
-@media only screen and (min-width : 0px) and (max-width : 576px) {
-    .clear-filter__btn span{
-        display: none;
-    }
+@media only screen and (min-width : 0px) and (max-width : 660px) {
 
     .films-queue__item {
         max-width: 125px;
@@ -129,13 +128,18 @@ button.clear-filter__btn::before {
 
     .filter-panel__selects {
         flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter-panel {
+        padding: 20px 30px
     }
 
     .clear-filter__btn span{
-        display: inline;
+        display: inline-block;
         font-weight: 600;
         font-size: 15px;
-        margin-left: 35px;
+        margin-left: 0px;
     }
 
     .filter-panel {
@@ -146,6 +150,7 @@ button.clear-filter__btn::before {
     .filter-panel__select-item {
         margin-right: 0;
         margin-bottom: 18px;
+        width: 100%;
     }
 
     button.clear-filter__btn::before {
