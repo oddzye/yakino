@@ -6,6 +6,8 @@
 @import './onlinetv-details/onlinetv-details.css';
 @import './videos/videos.css';
 @import './video-details/video-details.css';
+@import './nav/nav.css';
+
 * {
     box-sizing: border-box;
     margin: 0;

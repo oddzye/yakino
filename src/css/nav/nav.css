@@ -1,0 +1,131 @@
+@keyframes bugfix {
+    from {
+      padding: 0;
+    }
+    to {
+      padding: 0;
+    }
+  }
+  @-webkit-keyframes bugfix {
+    from {
+      padding: 0;
+    }
+    to {
+      padding: 0;
+    }
+  }
+  #overlay-button {
+    display: none;
+    right: 2em;
+    top: 3em;
+    z-index: 5;
+    cursor: pointer;
+    user-select: none;
+    margin-right: 7px;
+  }
+  #overlay-button span {
+    height: 2px;
+    width: 13px;
+    border-radius: 2px;
+    background-color: white;
+    position: relative;
+    display: block;
+    transition: all .2s ease-in-out;
+  }
+  #overlay-button span:before {
+    top: -8px;
+    visibility: visible;
+    width: 26px;
+  }
+  #overlay-button span:after {
+    top: 8px;
+    width: 20px;
+  }
+  #overlay-button span:before, #overlay-button span:after {
+    height: 2px;
+    border-radius: 2px;
+    background-color: white;
+    position: absolute;
+    content: "";
+    transition: all .2s ease-in-out;
+  }
+  #overlay-button:hover span, #overlay-button:hover span:before, #overlay-button:hover span:after {
+    background: #333332;
+  }
+  
+  input[type=checkbox] {
+    display: none;
+  }
+  
+  input[type=checkbox]:checked ~ #overlay {
+    visibility: visible;
+  }
+  
+  input[type=checkbox]:checked ~ #overlay-button:hover span, input[type=checkbox]:checked ~ #overlay-button span {
+    background: transparent;
+  }
+  input[type=checkbox]:checked ~ #overlay-button span:before {
+    transform: rotate(45deg) translate(7px, 7px);
+    opacity: 1;
+    width: 20px;
+    top: -10px;
+  }
+  input[type=checkbox]:checked ~ #overlay-button span:after {
+    transform: rotate(-45deg) translate(7px, -7px);
+    width: 20px;
+    top: 10px;
+  }
+
+  input[type=checkbox]:checked ~ #overlay-button {
+    position: absolute;
+    right: 0em;
+    top: 2em;
+  }
+  
+  #overlay {
+    height: 100vh;
+    width: 100vw;
+    background: #030304;
+    z-index: 2;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  #overlay.active {
+    visibility: visible;
+  }
+  #overlay ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0;
+    list-style-type: none;
+    padding: 60px 30px;
+  }
+  #overlay ul li {
+    margin-bottom: 30px;
+  }
+  #overlay ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+  }
+  #overlay ul li a:hover {
+    color: #333332;
+  }
+
+  .mobile-nav__icon {
+      margin-right: 19px;
+  }
+
+  @media only screen and (min-width : 0px) and (max-width : 768px) {
+    #overlay-button {
+        display: inline-block;
+    }
+}

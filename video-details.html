@@ -15,11 +15,19 @@
 <body>
    <header class="main-header">
        <div class="nav-wrap">
-            <div class="burger-menu">
-                <span class="first-line"></span>
-                <span class="second-line"></span>
-                <span class="third-line"></span>
-            </div>
+           <div class="burger-menu">
+                <input type="checkbox" id="overlay-input" />
+                <label for="overlay-input" id="overlay-button"><span></span></label>
+                  <div id="overlay">
+                    <ul>
+                      <li><a href="#"><img class="mobile-nav__icon" src="./src/img/nav/movie-icon.png">Фильмы</a></li>
+                      <li><a href="#"><img class="mobile-nav__icon" src="./src/img/nav/serials-icon.png">Сериалы</a></li>
+                      <li><a href="#"><img class="mobile-nav__icon" src="./src/img/nav/cartoons-icon.png">Мультфильмы</a></li>
+                      <li><a href="#"><img class="mobile-nav__icon" src="./src/img/nav/tv-icon.png">Онлайн ТВ</a></li>
+                      <li><a href="#"><img class="mobile-nav__icon" src="./src/img/nav/video-icon.png">Видеоролики</a></li>
+                    </ul>
+                  </div>
+           </div>
             <div class="logo-wrap">
                     <img src="./src/img/header/logo.png" alt="Я-кино">
             </div>
@@ -45,83 +53,80 @@
        <div class="md-container">
            <h2 class="video-details__title">[BadComedian] - НА РАЙОНЕ (Козловский и его РЕАЛЬНЫЕ ПАЦАНЫ)</h2>
            <p class="video-details__category">Кино</p>
-           <div class="video-details__watch__subscribe">
-                <video src="https://www.youtube.com/embed/tUzmPbUQYBs" poster="./src/img/video-details/video-details__watch-bg.jpg" controls>
-                </video>
-                <div class="film-details__watch__subscribe video-details__hover">
-                        <h3 class="film-details__watch__subscribe__title">Доступно по подписке</h3>
-                        <p class="film-details__watch__subscribe__text">Неограниченный доступ к нашей библиотеке в любое время</p>
-                        <div class="film-details__watch__advantages__block">
-                            <div class="film-details__watch__advantages__numbers">
-                                <div class="advantages-numbers__item">
-                                    <div class="item-number">2000+</div>
-                                    <div class="number-text">фильмов</div>
-                                </div>
-                                <div class="advantages-numbers__item">
-                                    <div class="item-number">1000+</div>
-                                    <div class="number-text">сериалов</div>
-                                </div>
-                                <div class="advantages-numbers__item">
-                                    <div class="item-number">1500+</div>
-                                    <div class="number-text">мультфильмов</div>
-                                </div>
-                                <div class="advantages-numbers__item">
-                                    <div class="item-number">60+</div>
-                                    <div class="number-text">каналов</div>
-                                </div>
-                                <div class="advantages-numbers__item">
-                                    <div class="item-number">3000+</div>
-                                    <div class="number-text">видеороликов</div>
-                                </div>
-                            </div>
-                            <div class="film-details__watch__advantages__text">
-                                <div class="advantages-text__item">
-                                    <div class="item-text__img">
-                                        <img src="./src/img/film-details/devices-icon.png" alt="">
-                                    </div>
-                                    <div class="item-text__text">Неограниченное <br> количество устройств</div>
-                                </div>
-                                <div class="advantages-text__item">
-                                    <div class="item-text__img">
-                                        <img src="./src/img/film-details/no-waiting-icon.png" alt="">
-                                    </div>
-                                    <div class="item-text__text">Отсутствие <br>рекламы</div>
-                                </div>
-                                <div class="advantages-text__item">
-                                    <div class="item-text__img">
-                                        <img src="./src/img/film-details/quality-icon.png" alt="">
-                                    </div>
-                                    <div class="item-text__text">Высокое качество <br> видео</div>
-                                </div>
-                                <div class="advantages-text__item">
-                                    <div class="item-text__img">
-                                        <img src="./src/img/film-details/clock-icon.png" alt="">
-                                    </div>
-                                    <div class="item-text__text">Активация за <br> 1 минуту</div>
-                                </div>
-                            </div>
-                            <div class="film-details__watch__advantages__company">
-                                <div class="advantages-company__item">
-                                    <img src="./src/img/film-details/fox.png" alt="fox">
-                                </div>
-                                <div class="advantages-company__item">
-                                    <img src="./src/img/film-details/disney.png" alt="disney">
-                                </div>
-                                <div class="advantages-company__item">
-                                    <img src="./src/img/film-details/paramount.png" alt="paramount">
-                                </div>
-                                <div class="advantages-company__item">
-                                    <img src="./src/img/film-details/lionsgate.png" alt="lionsgate">
-                                </div>
-                                <div class="advantages-company__item">
-                                    <a>
-                                        <img src="./src/img/film-details/more-icon.png" alt="Ещё">
-                                    </a>
-                                </div>
-                            </div>
-                            <button class="try-free__btn">Попробовать бесплатно</button>
-                        </div>
+           <div class="film-details__watch__subscribe video-details__watch__subscribe">
+            <h3 class="film-details__watch__subscribe__title">Доступно по подписке</h3>
+            <p class="film-details__watch__subscribe__text">Неограниченный доступ к нашей библиотеке в любое время</p>
+            <div class="film-details__watch__advantages__block">
+                <div class="film-details__watch__advantages__numbers">
+                    <div class="advantages-numbers__item">
+                        <div class="item-number">2000+</div>
+                        <div class="number-text">фильмов</div>
                     </div>
+                    <div class="advantages-numbers__item">
+                        <div class="item-number">1000+</div>
+                        <div class="number-text">сериалов</div>
+                    </div>
+                    <div class="advantages-numbers__item">
+                        <div class="item-number">1500+</div>
+                        <div class="number-text">мультфильмов</div>
+                    </div>
+                    <div class="advantages-numbers__item">
+                        <div class="item-number">60+</div>
+                        <div class="number-text">каналов</div>
+                    </div>
+                    <div class="advantages-numbers__item">
+                        <div class="item-number">3000+</div>
+                        <div class="number-text">видеороликов</div>
+                    </div>
+                </div>
+                <div class="film-details__watch__advantages__text">
+                    <div class="advantages-text__item">
+                        <div class="item-text__img">
+                            <img src="./src/img/film-details/devices-icon.png" alt="">
+                        </div>
+                        <div class="item-text__text">Неограниченное <br> количество устройств</div>
+                    </div>
+                    <div class="advantages-text__item">
+                        <div class="item-text__img">
+                            <img src="./src/img/film-details/no-waiting-icon.png" alt="">
+                        </div>
+                        <div class="item-text__text">Отсутствие <br>рекламы</div>
+                    </div>
+                    <div class="advantages-text__item">
+                        <div class="item-text__img">
+                            <img src="./src/img/film-details/quality-icon.png" alt="">
+                        </div>
+                        <div class="item-text__text">Высокое качество <br> видео</div>
+                    </div>
+                    <div class="advantages-text__item">
+                        <div class="item-text__img">
+                            <img src="./src/img/film-details/clock-icon.png" alt="">
+                        </div>
+                        <div class="item-text__text">Активация за <br> 1 минуту</div>
+                    </div>
+                </div>
+                <div class="film-details__watch__advantages__company">
+                    <div class="advantages-company__item">
+                        <img src="./src/img/film-details/fox.png" alt="fox">
+                    </div>
+                    <div class="advantages-company__item">
+                        <img src="./src/img/film-details/disney.png" alt="disney">
+                    </div>
+                    <div class="advantages-company__item">
+                        <img src="./src/img/film-details/paramount.png" alt="paramount">
+                    </div>
+                    <div class="advantages-company__item">
+                        <img src="./src/img/film-details/lionsgate.png" alt="lionsgate">
+                    </div>
+                    <div class="advantages-company__item">
+                        <a>
+                            <img src="./src/img/film-details/more-icon.png" alt="Ещё">
+                        </a>
+                    </div>
+                </div>
+                <button class="try-free__btn">Попробовать бесплатно</button>
+            </div>
+        </div>
         </div>
     </div>
    </section>
@@ -157,5 +162,6 @@
         </div>
         <span class="footer-list__item footer-rights">© 2019, Name. Все права защищены</span>
     </footer>
+    <script src="./src/js/nav.js"></script>
 </body>
 </html>
